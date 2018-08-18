@@ -38,7 +38,6 @@ def meeting_room_ii(intervals):
     Reference:
         http://www.cnblogs.com/grandyang/p/5244720.html
     """
-    # Solution 1:
     def solution1():
         min_rooms = 0
         rooms = 0
@@ -55,7 +54,6 @@ def meeting_room_ii(intervals):
 
         return min_rooms
 
-    # Solution 2:
     def solution2():
         min_rooms = 0
         rooms = 0
@@ -75,7 +73,6 @@ def meeting_room_ii(intervals):
 
         return min_rooms
 
-    solution2()
     return solution1()
 
 
@@ -124,11 +121,6 @@ def find_top_followees(matrix):
     return top_followees
 
 
-def dijkstra():
-    """."""
-    pass
-
-
 def find_min_height_trees(n, edges):
     """.
 
@@ -164,7 +156,7 @@ def find_min_height_trees(n, edges):
 
 
 class TestCaseAlgo(unittest.TestCase):
-    """Test case for alogorithms."""
+    """Test case for algorithms."""
 
     def assert_equal(self, func, data):
         """Equal assertion.
@@ -183,6 +175,14 @@ class TestCaseAlgo(unittest.TestCase):
             ([[0, 30], [5, 10], [15, 20]], 2),
             ([[0, 30], [15, 40], [10, 35], [40, 45]], 3),
         ))
+
+    def test_find_top_followees(self):
+        """."""
+        pass
+
+    def test_find_min_height_trees(self):
+        """."""
+        pass
 
 
 if __name__ == '__main__':
